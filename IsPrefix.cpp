@@ -4,7 +4,13 @@ int main ()
 {
    string base , prefix;
 
-   cin >> base >> prefix;
+   cin >> base >> prefix; 
+
+   if(base.size() < prefix.size())
+   {
+    cout <<" No\n";
+    return 0;
+   }
 
    for(int i; i < prefix.size(); i++)
 
